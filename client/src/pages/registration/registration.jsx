@@ -4,7 +4,7 @@ import AbstractArt from "../../assets/abstractArt.svg";
 export default function Registration() {
   return (
     <body className="flex min-h-screen">
-      <div class="flex-1 bg-indigo-50">
+      <div class="flex-1 bg-indigo-100">
         <div className="logo-container container flex h-full md:hidden">
           <img
             className="h-full w-auto object-cover"
@@ -13,11 +13,11 @@ export default function Registration() {
           />
         </div>
       </div>
-      <div class="flex-1 bg-indigo-50">
+      <div class="flex-1 bg-indigo-100">
         <h1 className=" text-5xl font-bold pt-32 sm:text-5xl sm:-ml-52 -ml-18">
           Create Account
         </h1>
-        <h2 className="text-md sm:-ml-52 font-light pl-4 ">
+        <h2 className="text-md sm:-ml-52 font-light pl-4 pt-2 ">
           Let's Create Your Account!
         </h2>
         <div className=" sm:-ml-44 ml-8 lg:-ml-18">
@@ -55,7 +55,7 @@ export default function Registration() {
             <div className="pt-10 pl-28">
               <button
                 type="submit"
-                class=" text-center py-3 rounded bg-green-700 text-white hover:bg-green-dark hover:bg-green-400 w-44 h-12 pl-4"
+                class=" text-center py-3 rounded bg-green-700 text-white hover:bg-green-dark hover:bg-green-400 w-44 h-12 pl-4 pr-4"
               >
                 Create Account
               </button>
