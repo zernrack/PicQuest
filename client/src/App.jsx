@@ -1,12 +1,12 @@
 import { useState } from 'react'
-import Login from './pages/login/login'
+import Home from './pages/home/home'
 import reactLogo from './assets/react.svg'
 import './App.css'
 
 export default function App() {
   return (
     <>
-    <Login />
+    <Home />
     </>
   )
 }
