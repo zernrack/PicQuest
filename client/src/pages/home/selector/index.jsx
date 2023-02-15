@@ -1,20 +1,22 @@
 import React from "react";
 import TabButton from "./TabButton/TabButton";
+import Feed from "../feed/index";
+import Contest from "../contest/Contest";
 
 export default function TabSelector() {
   const [buttons, setButtons] = React.useState([
     {
-      title: "Feed",
+      title: "FEED",
       checked: true,
-      value: <>h1</>,
+      value: <Feed />,
     },
     {
-      title: "Contest",
+      title: "CONTEST",
       checked: false,
-      value: <>h2</>,
+      value: <Contest />,
     },
   ]);
-  const [component, setComponent] = React.useState("Feed");
+  const [component, setComponent] = React.useState("FEED");
   function updateState(title) {
     setButtons((prevButtons) =>
       prevButtons.map((button) => {
@@ -23,7 +25,7 @@ export default function TabSelector() {
           : { ...button, checked: false };
       })
     );
-    //    console.log(buttons);
+      //  console.log(buttons,"Clicked!");
   }
 
   const ButtonElements = buttons.map((button) => {
@@ -47,6 +49,7 @@ export default function TabSelector() {
         <div className="h-auto p-2 flex bg-gray-200 mb-4 w-fit gap-2 rounded-lg">
           {ButtonElements}
         </div>
+        <div>{component}</div>
       </div>
     </>
   );
