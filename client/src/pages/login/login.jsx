@@ -14,6 +14,7 @@ export default function Login() {
     const storedPassword = localStorage.getItem("password");
     if (email === storedEmail && password === storedPassword) {
       navigate("/home");
+      alert("Login Successfully");
     } else {
       alert("Invalid email or password");
     }
