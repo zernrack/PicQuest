@@ -51,7 +51,7 @@ export default function Accordions() {
 
   return (
     <>
-      <div className="mt-10 ml-20 mr-48 mb-10">
+      <div className="mt-10 ml-20 mr-48 mb-96">
         <h1 className="text-5xl mb-10 font-sans font-black">FAQS</h1>
         <Accordion
           expanded={expanded === "panel1"}
