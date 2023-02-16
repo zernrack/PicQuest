@@ -2,6 +2,7 @@ import React from "react";
 import TabButton from "./TabButton/TabButton";
 import Feed from "../feed/index";
 import Contest from "../contest/Contest";
+import Accordions from "../../../Components/Accordion/AccordionFile";
 
 export default function TabSelector() {
   const [buttons, setButtons] = React.useState([
@@ -14,6 +15,16 @@ export default function TabSelector() {
       title: "CONTEST",
       checked: false,
       value: <Contest />,
+    },
+    {
+      title: "RANKINGS",
+      checked: false,
+      value: <></>,
+    },
+    {
+      title: "FAQS",
+      checked: false,
+      value: <Accordions />,
     },
   ]);
   const [component, setComponent] = React.useState("FEED");
