@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import HeartReact from "../../../../assets/HeartReact.svg";
 
 export default function FeedCard() {
   const [active, setActive] = useState(false);
