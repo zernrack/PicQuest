@@ -5,7 +5,7 @@ import Contest from "../contest/Contest";
 import Winners from "../PastWinners/winners";
 import Accordions from "../../../Components/Accordion/AccordionFile";
 import Button from "@mui/material/Button";
-import "./styles.css"
+import "./styles.css";
 import { Link } from "react-router-dom";
 
 export default function TabSelector() {
