@@ -45,7 +45,7 @@ export default function Login() {
               <p class="text-sm font-thin mt-2 pt-1 mb-0">
                 Don't have an account?
                 <a
-                  href="#!"
+                  href="/register"
                   class="text-red-600 hover:text-red-700 focus:text-red-700 transition duration-200 ease-in-out"
                 >
                   Register
