@@ -1,8 +1,12 @@
 import React from "react";
 import TabButton from "./TabButton/TabButton";
-import Feed from "../feed/index";
+import Feed from "../Feed/feed";
 import Contest from "../contest/Contest";
+import Winners from "../PastWinners/winners";
 import Accordions from "../../../Components/Accordion/AccordionFile";
+import Button from "@mui/material/Button";
+import "./styles.css"
+import { Link } from "react-router-dom";
 
 export default function TabSelector() {
   const [buttons, setButtons] = React.useState([
@@ -17,9 +21,9 @@ export default function TabSelector() {
       value: <Contest />,
     },
     {
-      title: "RANKINGS",
+      title: "PAST WINNERS",
       checked: false,
-      value: <></>,
+      value: <Winners />,
     },
     {
       title: "FAQS",
@@ -36,7 +40,7 @@ export default function TabSelector() {
           : { ...button, checked: false };
       })
     );
-      //  console.log(buttons,"Clicked!");
+    //  console.log(buttons,"Clicked!");
   }
 
   const ButtonElements = buttons.map((button) => {
@@ -59,6 +63,9 @@ export default function TabSelector() {
       <div>
         <div className="h-auto p-2 flex bg-gray-200 mb-4 w-fit gap-2 rounded-lg">
           {ButtonElements}
+          <Link to="/login">
+            <Button className="btnOut ">LOG OUT</Button>
+          </Link>
         </div>
         <div>{component}</div>
       </div>
