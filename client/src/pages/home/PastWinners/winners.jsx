@@ -3,7 +3,7 @@ import React from 'react'
 export default function Winners() {
   return (
     <>
-     <div className="flex flex-wrap">
+     <div className="flex flex-wrap mb-24">
      <div class="p-4 bg-gray-200">
           <div class="rounded-lg shadow-lg bg-white max-w-sm">
             <img

@@ -1,7 +1,7 @@
 import React from "react";
 import TabSelector from "./selector";
 import Logo from "../../assets/Logo.svg";
-import Login from "../login/login";
+import Footer from "../../Components/Footer/footerIndex";
 
 export default function Home() {
   return (
@@ -15,6 +15,7 @@ export default function Home() {
       <div className="flex md:ml-9 flex-row items-start justify-start ml-28 mt-10  max-w-full gap-2">
         <TabSelector />
       </div>
+      <Footer />
     </>
   );
 }

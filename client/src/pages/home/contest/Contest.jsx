@@ -1,5 +1,6 @@
 import React from "react";
-
+import Button from "@mui/material/Button";
+import Modal from "../../../Components/Modal/ModalUpload";
 export default function Contest() {
   function showAlert() {
     alert("Thanks For Voting!");
@@ -7,7 +8,11 @@ export default function Contest() {
   return (
     <>
       <h1 className="text-5xl mb-10 font-sans font-black">VOTE NOW</h1>
-      <div className="flex flex-wrap">
+      <div className="mb-2">
+        <Modal />
+      </div>
+
+      <div className="flex flex-wrap mb-10">
         <div class="p-4 bg-gray-200">
           <div class="rounded-lg shadow-lg bg-white max-w-sm">
             <img

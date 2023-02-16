@@ -3,7 +3,7 @@ import { React, useState } from "react";
 export default function Feed() {
   return (
     <>
-      <div className="flex flex-row flex-wrap">
+      <div className="flex flex-row flex-wrap mb-10">
         <div className="p-4 bg-gray-200">
           <div className="bg-white border rounded-sm max-w-md">
             <div className="flex items-center px-4 py-3">
