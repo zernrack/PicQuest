@@ -45,7 +45,7 @@ export default function TabSelector() {
   }, [buttons]);
   return (
     <>
-      <div className="m-auto max-w-4xl min-w-fit md:p-0 md:pl-12 md:pr-12 md:pb-12">
+      <div>
         <div className="h-auto p-2 flex bg-gray-200 mb-4 w-fit gap-2 rounded-lg">
           {ButtonElements}
         </div>
