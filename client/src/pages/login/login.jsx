@@ -13,7 +13,7 @@ export default function Login() {
     const storedEmail = localStorage.getItem("email");
     const storedPassword = localStorage.getItem("password");
     if (email === storedEmail && password === storedPassword) {
-      navigate("/home");
+      navigate("/PicQuest/home");
       alert("Login Successfully");
     } else {
       alert("Invalid email or password");
