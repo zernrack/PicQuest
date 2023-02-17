@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import AbstractArt from "../../assets/abstractArt.svg";
 
 export default function Registration() {
@@ -81,12 +82,12 @@ export default function Registration() {
               />
               <p class="text-sm font-thin mt-2 pt-1 mb-0">
                 Already Have Account?
-                <a
-                  href="/PicQuest/"
-                  class="text-red-600 hover:text-red-700 focus:text-red-700 transition duration-200 ease-in-out"
+                <Link
+                  to="/PicQuest/"
+                  className="text-red-600 hover:text-red-700 focus:text-red-700 transition duration-200 ease-in-out"
                 >
                   Login
-                </a>
+                </Link>
               </p>
               <div className="pt-10 pl-28">
                 {error && <p className="text-red-600">{error}</p>}

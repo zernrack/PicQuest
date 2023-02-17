@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import AbstractArt from "../../assets/abstractArt.svg";
 import WaveHand from "../../assets/WaveHand.svg";
 
@@ -68,12 +68,12 @@ export default function Login() {
                 />
                 <p className="text-sm font-thin mt-2 pt-1 mb-0">
                   Don't have an account?
-                  <a
-                    href="/PicQuest/register"
+                  <Link
+                    to="/PicQuest/register"
                     className="text-red-600 hover:text-red-700 focus:text-red-700 transition duration-200 ease-in-out"
                   >
                     Register
-                  </a>
+                  </Link>
                 </p>
                 <div className="pt-10 pl-28">
                   <button
