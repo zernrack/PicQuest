@@ -1,6 +1,6 @@
 const routes = {
-    home: "/home",
-    register: "/register",
+    home: "/PicQuest/home",
+    register: "/PicQuest/register",
 
 };
 
