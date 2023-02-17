@@ -17,7 +17,7 @@ export default function Registration() {
     localStorage.setItem("name", name);
     localStorage.setItem("email", email);
     localStorage.setItem("password", password);
-    window.location.href = "/PicQuest";
+    window.location.href = "/PicQuest/";
   };
 
   return (
