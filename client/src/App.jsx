@@ -10,7 +10,7 @@ export default function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/PicQuest" element={<Login />} />
+          <Route path="/PicQuest/" element={<Login />} />
           <Route path={routes.home} element={<Home />} />
           <Route path={routes.register} element={<Register />} />
         </Routes>
