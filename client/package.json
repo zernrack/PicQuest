@@ -5,9 +5,10 @@
   "type": "module",
   "homepage": "https://zernrack.github.io/PicQuest/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
-    "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
   "dependencies": {
