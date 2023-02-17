@@ -63,7 +63,7 @@ export default function TabSelector() {
       <div>
         <div className="h-auto p-2 flex bg-gray-200 mb-4 w-fit gap-2 rounded-lg">
           {ButtonElements}
-          <Link to="/">
+          <Link to="/PicQuest/">
             <Button className="btnOut ">LOG OUT</Button>
           </Link>
         </div>
